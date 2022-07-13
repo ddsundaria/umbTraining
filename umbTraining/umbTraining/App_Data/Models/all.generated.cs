@@ -7,7 +7,7 @@ using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
 [assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "184ad87260292d32")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
 
 
 // FILE: models.generated.cs
