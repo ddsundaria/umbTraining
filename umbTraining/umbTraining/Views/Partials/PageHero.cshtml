@@ -1,6 +1,12 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@using Umbraco.Core.PropertyEditors.ValueConverters
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 
-<div class="page-heading about-heading header-text">
+@{ 
+    ImageCropperValue carouselImage = Model.Value<ImageCropperValue>("heroImage");
+
+    var imageCropUrl = $"{carouselImage.Src}?width=1600";
+}
+<div class="page-heading header-text" style="background-image:url(@imageCropUrl)">
       <div class="container">
         <div class="row">
           <div class="col-md-12">

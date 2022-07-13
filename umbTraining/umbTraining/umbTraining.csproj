@@ -411,6 +411,15 @@
     <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\BlockList\Default.cshtml" />
+    <Content Include="Views\Partials\Navigation.cshtml" />
+    <Content Include="Views\Partials\PageHero.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\Header.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\MasterLayout.cshtml" />
+    <Content Include="Views\Page.cshtml" />
+    <Content Include="Views\Product.cshtml" />
+    <Content Include="Views\Partials\Carousel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Web
+
+@{ var selection = Model.Root().Children.Where(x => x.IsVisible()).ToArray();
+    var root = Model.Root();
+ }
+
+@if (selection.Length > 0)
+{
+<ul class="navbar-nav ml-auto">
+    @(root.IsVisible()){
+    <li class="nav-item">
+        <a class="nav-link" href="@root.Url">
+            @root.Name<span class="sr-only">(current)</span>
+        </a>
+    </li>
+    }
+
+    @foreach (var item in selection)
+    {
+    <li class="nav-item @(item.IsAncestorOrSelf(Model) ? " active" : null)">
+        <a class="nav-link" href="@item.Url">
+            @item.Name
+            @{
+            if(item.IsAncestorOrSelf(Model))
+            {
+            <span class="sr-only">(current)</span>
+            }
+            }
+        </a>
+    </li>
+    }
+</ul>
+
+
+}

@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+    var heroSlider = Model.Value<IPublishedContent>("heroSlider");
+
+    if (heroSlider != null)
+    {
+
+        <!-- Banner Starts Here -->
+        <div class="banner header-text">
+            <div class="owl-banner owl-carousel">
+                @foreach (var slider in heroSlider.Children())
+                {
+                    var typedObject = ((Umbraco.Web.PublishedModels.Carousel)slider);
+                    var image = typedObject.Image;
+
+                    <div style="background-image:url(@image.GetCropUrl("w800")">
+                        <div class="text-content">
+                            <h4>@slider.Value("subTitle")</h4>
+                            <h2>@slider.Value("title")</h2>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+        <!-- Banner Ends Here -->
+    }
+}

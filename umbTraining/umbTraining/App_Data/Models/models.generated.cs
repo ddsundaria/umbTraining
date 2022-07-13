@@ -17,14 +17,14 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "184ad87260292d32")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.8")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b0229746a9061ce8")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.11")]
 
 namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ISEO
+	public partial class Home : PublishedContentModel, INavigable, ISEO
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -67,6 +67,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("logo")]
 		public virtual global::Umbraco.Core.Models.MediaWithCrops Logo => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("logo");
+
+		///<summary>
+		/// Hide from navigation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("umbracoNaviHide")]
+		public virtual bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigable.GetUmbracoNaviHide(this);
 
 		///<summary>
 		/// Description
@@ -146,7 +153,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Page</summary>
 	[PublishedModel("page")]
-	public partial class Page : PublishedContentModel
+	public partial class Page : PublishedContentModel, INavigable
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -174,7 +181,21 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("heroImage")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops HeroImage => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("heroImage");
+		public virtual global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue HeroImage => this.Value<global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue>("heroImage");
+
+		///<summary>
+		/// PageBody
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageBody")]
+		public virtual global::System.Web.IHtmlString PageBody => this.Value<global::System.Web.IHtmlString>("pageBody");
+
+		///<summary>
+		/// PageGridEditor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("pageGridEditor")]
+		public virtual global::Newtonsoft.Json.Linq.JToken PageGridEditor => this.Value<global::Newtonsoft.Json.Linq.JToken>("pageGridEditor");
 
 		///<summary>
 		/// PageTitle
@@ -189,6 +210,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("subTitle")]
 		public virtual string SubTitle => this.Value<string>("subTitle");
+
+		///<summary>
+		/// Hide from navigation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("umbracoNaviHide")]
+		public virtual bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigable.GetUmbracoNaviHide(this);
 	}
 
 	/// <summary>Product</summary>
@@ -215,6 +243,13 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Origin of Product
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("originOfProduct")]
+		public virtual string OriginOfProduct => this.Value<string>("originOfProduct");
 
 		///<summary>
 		/// Product Description
@@ -282,7 +317,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
 		[ImplementPropertyType("image")]
-		public virtual global::Umbraco.Core.Models.MediaWithCrops Image => this.Value<global::Umbraco.Core.Models.MediaWithCrops>("image");
+		public virtual global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue Image => this.Value<global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue>("image");
 
 		///<summary>
 		/// SubTitle
@@ -301,7 +336,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Data</summary>
 	[PublishedModel("data")]
-	public partial class Data : PublishedContentModel
+	public partial class Data : PublishedContentModel, INavigable
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -323,6 +358,13 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Hide from navigation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("umbracoNaviHide")]
+		public virtual bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigable.GetUmbracoNaviHide(this);
 	}
 
 	/// <summary>Carousles</summary>
@@ -349,6 +391,52 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+	}
+
+	// Mixin Content Type with alias "navigable"
+	/// <summary>Navigable</summary>
+	public partial interface INavigable : IPublishedContent
+	{
+		/// <summary>Hide from navigation</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		bool UmbracoNaviHide { get; }
+	}
+
+	/// <summary>Navigable</summary>
+	[PublishedModel("navigable")]
+	public partial class Navigable : PublishedContentModel, INavigable
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const string ModelTypeAlias = "navigable";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Navigable, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Navigable(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Hide from navigation
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		[ImplementPropertyType("umbracoNaviHide")]
+		public virtual bool UmbracoNaviHide => GetUmbracoNaviHide(this);
+
+		/// <summary>Static getter for Hide from navigation</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.18.4")]
+		public static bool GetUmbracoNaviHide(INavigable that) => that.Value<bool>("umbracoNaviHide");
 	}
 
 	/// <summary>Folder</summary>

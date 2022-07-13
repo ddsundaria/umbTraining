@@ -5,3 +5,7 @@
 }
 
 @Html.Partial("PageHero")
+
+@Model.Value("pageBody")
+
+@Html.GetGridHtml(Model, "pageGridEditor")
