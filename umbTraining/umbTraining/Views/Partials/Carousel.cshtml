@@ -2,7 +2,7 @@
 
 @{
     var heroSlider = Model.Value<IPublishedContent>("heroSlider");
-
+    int count = 0;
     if (heroSlider != null)
     {
 
@@ -11,16 +11,16 @@
             <div class="owl-banner owl-carousel">
                 @foreach (var slider in heroSlider.Children())
                 {
-                    var typedObject = ((Umbraco.Web.PublishedModels.Carousel)slider);
-                    var image = typedObject.Image;
+                    count++;
+                    var classStyle = $"banner-item-0{count}";
+                    var backgroundUrl = Url.GetCropUrl(slider, "image", "w800");
 
-                    <div style="background-image:url(@image.GetCropUrl("w800")">
+                    <div class="@classStyle" style="background-image:url('@backgroundUrl')">
                         <div class="text-content">
                             <h4>@slider.Value("subTitle")</h4>
                             <h2>@slider.Value("title")</h2>
                         </div>
                     </div>
-
                 }
             </div>
         </div>
