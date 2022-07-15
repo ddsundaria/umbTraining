@@ -1,13 +1,32 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<umbTraining.Models.ProductContentModel>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = "MasterLayout.cshtml";
+    Layout = "MasterLayout.cshtml";
 }
 
-<h2>
-	@Model.Value("productName")
-</h2>
+@{
+    var mediaItem = Model.Value<IPublishedContent>("productImage");
+    ;
+}
+<div class="container">
+    <div class="col-md-12" style="padding-top:100px!important;">
+        <div class="col-3">
+            @if (mediaItem != null)
+            {
+                <img src="@mediaItem.Url" />
+            }
+        </div>
+        <div class="col-6">
+            <h2>
+                @Model.Value("productTitle")
+            </h2>
+            <p>
+                @Model.Value("productDescription")
+            </p>
 
-<span>Price (Without GST): @Model.Value("productPrice")</span>
-<br/>
-<span>Price (With GST): @Model.ProductGstPrice</span>
+            <span>Price (Without GST): @Model.Value("productPrice")</span>
+            <br />
+            <span>Price (With GST): @Model.ProductGstPrice</span>
+        </div>
+    </div>
+</div>
