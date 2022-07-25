@@ -411,6 +411,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\ProductController.cs" />
+    <Content Include="App_Code\SubscribeToContentServiceSavingComponent.cs" />
+    <Content Include="App_Code\SubscribeToPublishEventComponent.cs" />
     <Compile Include="Controllers\ContactFormController.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\ProductContentModel.cs" />
