@@ -92,11 +92,9 @@ Umbraco.Core.Migrations.Upgrade.V_8_0_0.ContentVariationMigration, Umbraco.Core,
 Umbraco.Core.Migrations.Upgrade.V_8_0_0.DataTypes.PreValueMigratorComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Logging.Viewer.LogViewerComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Services.Implement.KeyValueService+InitializeMigration, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.uSyncBackOfficeConfigComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.uSyncBackOfficeComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.Controllers.uSyncDashboardApiController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.Controllers.Trees.uSyncTreeController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.Cache.RebuildCacheComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.HistoryView.HistoryComposer, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+uSync8.HistoryView.Controllers.uSyncHistoryApiController, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -307,19 +305,21 @@ Umbraco.Web.Cache.PublicAccessCacheRefresher, Umbraco.Web, Version=8.0.0.0, Cult
 Umbraco.Web.Cache.TemplateCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 uSync8.Core.uSyncCoreComposer, uSync8.Core, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.ProductController, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.SubscribeToContentServiceSavingComposer, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.SubscribeToPublishEventComposer, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.uSyncBackOfficeConfigComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.uSyncBackOfficeComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Controllers.uSyncDashboardApiController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Controllers.Trees.uSyncTreeController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Cache.RebuildCacheComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.ModelsBuilderDashboard, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.Compose.ModelsBuilderComposer, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.ProductController, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.SubscribeToContentServiceSavingComposer, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.SubscribeToPublishEventComposer, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 uSync8.ContentEdition.uSyncContentComposer, uSync8.ContentEdition, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-uSync8.HistoryView.HistoryComposer, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-uSync8.HistoryView.Controllers.uSyncHistoryApiController, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
 
@@ -330,9 +330,7 @@ Umbraco.Core.Compose.RelateOnTrashComposer, Umbraco.Core, Version=8.0.0.0, Cultu
 Umbraco.Core.Runtime.CoreInitialComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Migrations.Upgrade.V_8_0_0.DataTypes.PreValueMigratorComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Logging.Viewer.LogViewerComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.uSyncBackOfficeConfigComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.uSyncBackOfficeComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.Cache.RebuildCacheComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.HistoryView.HistoryComposer, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.SignalR.PreviewHubComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Runtime.WebInitialComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Runtime.WebFinalComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -353,11 +351,13 @@ Umbraco.Web.Compose.PublicAccessComposer, Umbraco.Web, Version=8.0.0.0, Culture=
 Umbraco.Web.Compose.NestedContentPropertyComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.DistributedCacheBinderComposer, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 uSync8.Core.uSyncCoreComposer, uSync8.Core, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.SubscribeToContentServiceSavingComposer, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.SubscribeToPublishEventComposer, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.uSyncBackOfficeConfigComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.uSyncBackOfficeComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Cache.RebuildCacheComposer, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.Compose.ModelsBuilderComposer, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.SubscribeToContentServiceSavingComposer, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.SubscribeToPublishEventComposer, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 uSync8.ContentEdition.uSyncContentComposer, uSync8.ContentEdition, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.HistoryView.HistoryComposer, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.PropertyEditors.IPropertyValueConverter
 
@@ -398,21 +398,20 @@ Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, Umb
 
 Umbraco.Web.Mvc.PluginController
 
+umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.IRenderMvcController
 
 Umbraco.Web.Mvc.RenderMvcController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.App_Code.ProductController, App_Code.b0zbsuq_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+umbTraining.App_Code.ProductController, App_Code.ubwgwq3p, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.WebApi.UmbracoApiController
 
-uSync8.BackOffice.Controllers.uSyncDashboardApiController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-uSync8.BackOffice.Controllers.Trees.uSyncTreeController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.HistoryView.Controllers.uSyncHistoryApiController, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Trees.LogViewerTreeController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Trees.FilesTreeController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Trees.ContentBlueprintTreeController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -485,16 +484,17 @@ Umbraco.Web.Editors.ContentTypeController, Umbraco.Web, Version=8.0.0.0, Culture
 Umbraco.Web.Editors.MediaTypeController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Editors.SectionController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Editors.MediaController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Controllers.uSyncDashboardApiController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
+uSync8.BackOffice.Controllers.Trees.uSyncTreeController, uSync8.BackOffice, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-uSync8.HistoryView.Controllers.uSyncHistoryApiController, uSync8.HistoryView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.SurfaceController
 
+umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-umbTraining.Controllers.ContactFormController, umbTraining, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Dashboards.IDashboard
 
@@ -694,7 +694,4 @@ uSync8.ContentEdition.Handlers.DictionaryHandler, uSync8.ContentEdition, Version
 uSync8.ContentEdition.Handlers.DomainHandler, uSync8.ContentEdition, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
 uSync8.ContentEdition.Handlers.MediaHandler, uSync8.ContentEdition, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
 uSync8.ContentEdition.Handlers.RelationTypeHandler, uSync8.ContentEdition, Version=8.11.1.0, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 

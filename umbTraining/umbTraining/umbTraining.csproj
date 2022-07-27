@@ -314,6 +314,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="500.html" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\lang\en-GB.xml" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\lang\en-US.xml" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\pictureoftheday.controller.js" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\pictureoftheday.css" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\pictureoftheday.html" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\dashboard.html" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\uSyncDashboardController.js" />
     <Content Include="App_Plugins\uSync8\changeDialog.html" />
@@ -454,6 +460,7 @@
     <Content Include="config\uSync8.config" />
     <Content Include="App_Plugins\uSync8\package.manifest" />
     <Content Include="App_Plugins\uSync8\addons.json" />
+    <Content Include="App_Plugins\CustomDashboards\PictureOfTheDay\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
